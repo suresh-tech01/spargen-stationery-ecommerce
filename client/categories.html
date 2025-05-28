@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StationeryHub - Your Creative Supplies Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">StationeryHub</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <button id="theme-toggle" class="icon-btn"><i class="fas fa-moon"></i></button>
+                <a href="login.html" class="icon-btn"><i class="fas fa-user"></i></a>
+                <a href="wishlist.html" class="icon-btn"><i class="fas fa-heart"></i></a>
+                <a href="cart.html" class="icon-btn"><i class="fas fa-shopping-cart"></i></a>
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content (will be different for each page) -->
+     <main class="main-content">
+        <section class="categories-page">
+            <div class="container">
+                <div class="page-header">
+                    <h1>Shop by Category</h1>
+                    <div class="breadcrumb">
+                        <a href="index.html">Home</a> / <span>Categories</span>
+                    </div>
+                </div>
+                
+                <div class="categories-grid">
+                    <!-- Category 1 -->
+                    <div class="category-card">
+                        <a href="products.html?category=fountain-pens" class="category-link">
+                            <div class="category-image">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKl6YSPQcNj3_Ax4-xj67tiIJHF0qV6VhxdA&s" alt="Fountain Pens">
+                            </div>
+                            <div class="category-info">
+                                <h3>Fountain Pens</h3>
+                                <span class="product-count">25 products</span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Category 2 -->
+                    <div class="category-card">
+                        <a href="products.html?category=gel-pens" class="category-link">
+                            <div class="category-image">
+                                <img src="https://m.media-amazon.com/images/I/81aTYb7hYvL.jpg" alt="Gel Pens">
+                            </div>
+                            <div class="category-info">
+                                <h3>Gel Pens</h3>
+                                <span class="product-count">15 products</span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Category 3 -->
+                    <div class="category-card">
+                        <a href="products.html?category=watercolors" class="category-link">
+                            <div class="category-image">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROg2rsNz2EzkxcTaaZwA7bqcDS9qnZH4XDvQ&s" alt="Watercolors">
+                            </div>
+                            <div class="category-info">
+                                <h3>Watercolors</h3>
+                                <span class="product-count">42 products</span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Category 4 -->
+                    <div class="category-card">
+                        <a href="products.html?category=markers" class="category-link">
+                            <div class="category-image">
+                                <img src="https://m.media-amazon.com/images/I/71wB4A7Is0L.jpg" alt="Art Markers">
+                            </div>
+                            <div class="category-info">
+                                <h3>Art Markers</h3>
+                                <span class="product-count">17 products</span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Category 5 -->
+                    <div class="category-card">
+                        <a href="products.html?category=notebooks" class="category-link">
+                            <div class="category-image">
+                                <img src="https://www.worldone.in/cdn/shop/products/Mix_1024x1024.jpg?v=1678875822" alt="Notebooks">
+                            </div>
+                            <div class="category-info">
+                                <h3>Notebooks</h3>
+                                <span class="product-count">23 products</span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Category 6 -->
+                    <div class="category-card">
+                        <a href="products.html?category=stationery-sets" class="category-link">
+                            <div class="category-image">
+                                <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/art-set/5/i/w/4-ps-random-stationery-gift-sets-for-kids-2-pencils-1-eraser-1-original-imahyg4vttnshurk.jpeg?q=90&crop=false" alt="Stationery Sets">
+                            </div>
+                            <div class="category-info">
+                                <h3>Stationery Sets</h3>
+                                <span class="product-count">17 products</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h3>StationeryHub</h3>
+                <p>Your one-stop shop for all creative supplies and stationery needs.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> info@stationeryhub.com</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 StationeryHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

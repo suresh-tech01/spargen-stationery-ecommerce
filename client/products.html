@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StationeryHub - Your Creative Supplies Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">StationeryHub</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <button id="theme-toggle" class="icon-btn"><i class="fas fa-moon"></i></button>
+                <a href="login.html" class="icon-btn"><i class="fas fa-user"></i></a>
+                <a href="wishlist.html" class="icon-btn"><i class="fas fa-heart"></i></a>
+                <a href="cart.html" class="icon-btn"><i class="fas fa-shopping-cart"></i></a>
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content (will be different for each page) -->
+    <!-- Use the same header and footer from index.html -->
+<main class="main-content">
+    <section class="products-page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Our Products</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> / <span>Products</span>
+                </div>
+            </div>
+            
+            <div class="products-layout">
+                <aside class="sidebar">
+                    <div class="sidebar-widget">
+                        <h3>Categories</h3>
+                        <ul class="category-list">
+                            <li><a href="products.html">All Products</a></li>
+                            <li><a href="products.html?category=pens">Pens & Pencils</a></li>
+                            <li><a href="products.html?category=notebooks">Notebooks</a></li>
+                            <li><a href="products.html?category=art">Art Supplies</a></li>
+                            <li><a href="products.html?category=organization">Organization</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sidebar-widget">
+                        <h3>Filter by Price</h3>
+                        <div class="price-range">
+                            <input type="range" id="price-range" min="0" max="100" value="100">
+                            <div class="price-values">
+                                <span>$0</span>
+                                <span>$100</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-widget">
+                        <h3>Popular Tags</h3>
+                        <div class="tags">
+                            <a href="#" class="tag">Eco-friendly</a>
+                            <a href="#" class="tag">Premium</a>
+                            <a href="#" class="tag">Limited Edition</a>
+                            <a href="#" class="tag">Best Seller</a>
+                            <a href="#" class="tag">New Arrival</a>
+                        </div>
+                    </div>
+                </aside>
+                
+                <div class="products-main">
+                    <div class="products-filter">
+                        <div class="filter-left">
+                            <span>Showing 1-12 of 36 products</span>
+                        </div>
+                        <div class="filter-right">
+                            <label for="sort">Sort by:</label>
+                            <select id="sort">
+                                <option value="default">Default</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="name-asc">Name: A-Z</option>
+                                <option value="name-desc">Name: Z-A</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <a href="product.html?id=1" class="product-link">
+                                <div class="product-badge">New</div>
+                                <div class="product-image">
+                                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTt8qX9qsHPIP7-ui1oKk772vWPbkdy1htz56GPGMl8oTFZlFEyc69mC4prpbVaF--CP-vypQDi61C2Pe4JZzsbuR7uzBN4m9DyvUxOb6VB1k7H1x89Kls6" alt="Premium Fountain Pen">
+                                    <div class="product-actions">
+                                        <button class="icon-btn wishlist-btn"><i class="far fa-heart"></i></button>
+                                        <button class="icon-btn quick-view-btn"><i class="far fa-eye"></i></button>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <h3 class="product-title">Premium Fountain Pen</h3>
+                                    <div class="product-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <span>(12)</span>
+                                    </div>
+                                    <p class="product-price">$29.99</p>
+                                </div>
+                            </a>
+                            <button class="btn add-to-cart-btn">Add to Cart</button>
+                        </div>
+                        <!-- More product cards -->
+                    </div>
+                    
+                    <div class="pagination">
+                        <a href="#" class="page-link disabled"><i class="fas fa-chevron-left"></i></a>
+                        <a href="#" class="page-link active">1</a>
+                        <a href="#" class="page-link">2</a>
+                        <a href="#" class="page-link">3</a>
+                        <a href="#" class="page-link"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h3>StationeryHub</h3>
+                <p>Your one-stop shop for all creative supplies and stationery needs.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> info@stationeryhub.com</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 StationeryHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="js/api.js" type="module"></script>
+    <script src="js/products.js" type="module"></script>
+</body>
+</html>

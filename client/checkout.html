@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StationeryHub - Your Creative Supplies Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">StationeryHub</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <button id="theme-toggle" class="icon-btn"><i class="fas fa-moon"></i></button>
+                <a href="login.html" class="icon-btn"><i class="fas fa-user"></i></a>
+                <a href="wishlist.html" class="icon-btn"><i class="fas fa-heart"></i></a>
+                <a href="cart.html" class="icon-btn"><i class="fas fa-shopping-cart"></i></a>
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content (will be different for each page) -->
+    <!-- Use the same header and footer from index.html -->
+<main class="main-content">
+    <section class="checkout-page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Checkout</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> / 
+                    <a href="cart.html">Cart</a> / 
+                    <span>Checkout</span>
+                </div>
+            </div>
+            
+            <div class="checkout-layout">
+                <div class="checkout-form">
+                    <div class="checkout-step active" id="step-1">
+                        <h2 class="step-title">1. Shipping Information</h2>
+                        <div class="step-content">
+                            <form id="shipping-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="first-name">First Name</label>
+                                        <input type="text" id="first-name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="last-name">Last Name</label>
+                                        <input type="text" id="last-name" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="address">Street Address</label>
+                                    <input type="text" id="address" required>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="city">City</label>
+                                        <input type="text" id="city" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="state">State/Province</label>
+                                        <select id="state" required>
+                                            <option value="">Select State</option>
+                                            <option value="CA">California</option>
+                                            <option value="NY">New York</option>
+                                            <!-- States would be populated here -->
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="zip">ZIP/Postal Code</label>
+                                        <input type="text" id="zip" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="country">Country</label>
+                                    <select id="country" required>
+                                        <option value="US">United States</option>
+                                        <option value="CA">Canada</option>
+                                        <option value="UK">United Kingdom</option>
+                                        <!-- More countries would be added here -->
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group checkbox">
+                                    <input type="checkbox" id="save-info">
+                                    <label for="save-info">Save this information for next time</label>
+                                </div>
+                                
+                                <div class="form-group checkbox">
+                                    <input type="checkbox" id="different-billing">
+                                    <label for="different-billing">Billing address is different from shipping address</label>
+                                </div>
+                                
+                                <div class="step-actions">
+                                    <button type="button" class="btn btn-outline">Back to Cart</button>
+                                    <button type="button" class="btn next-step">Continue to Payment</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="checkout-step" id="step-2">
+                        <h2 class="step-title">2. Payment Method</h2>
+                        <div class="step-content">
+                            <form id="payment-form">
+                                <div class="payment-methods">
+                                    <div class="payment-method">
+                                        <input type="radio" id="credit-card" name="payment" value="credit-card" checked>
+                                        <label for="credit-card">Credit Card</label>
+                                        <div class="payment-details">
+                                            <div class="form-group">
+                                                <label for="card-number">Card Number</label>
+                                                <input type="text" id="card-number" placeholder="1234 5678 9012 3456">
+                                            </div>
+                                            
+                                            <div class="form-row">
+                                                <div class="form-group">
+                                                    <label for="card-expiry">Expiry Date</label>
+                                                    <input type="text" id="card-expiry" placeholder="MM/YY">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="card-cvc">CVC</label>
+                                                    <input type="text" id="card-cvc" placeholder="123">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <label for="card-name">Name on Card</label>
+                                                <input type="text" id="card-name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="payment-method">
+                                        <input type="radio" id="paypal" name="payment" value="paypal">
+                                        <label for="paypal">PayPal</label>
+                                        <div class="payment-details">
+                                            <p>You will be redirected to PayPal to complete your payment securely.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="payment-method">
+                                        <input type="radio" id="apple-pay" name="payment" value="apple-pay">
+                                        <label for="apple-pay">Apple Pay</label>
+                                        <div class="payment-details">
+                                            <p>Pay securely with Apple Pay using your iPhone or Apple device.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="step-actions">
+                                    <button type="button" class="btn btn-outline prev-step">Back to Shipping</button>
+                                    <button type="button" class="btn next-step">Review Order</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="checkout-step" id="step-3">
+                        <h2 class="step-title">3. Review Order</h2>
+                        <div class="step-content">
+                            <div class="order-review">
+                                <div class="review-section">
+                                    <h3>Shipping Information</h3>
+                                    <div class="review-info" id="shipping-review">
+                                        <!-- Dynamically filled from shipping form -->
+                                    </div>
+                                    <button type="button" class="edit-btn" data-step="1">Edit</button>
+                                </div>
+                                
+                                <div class="review-section">
+                                    <h3>Payment Method</h3>
+                                    <div class="review-info" id="payment-review">
+                                        <!-- Dynamically filled from payment form -->
+                                    </div>
+                                    <button type="button" class="edit-btn" data-step="2">Edit</button>
+                                </div>
+                                
+                                <div class="review-section">
+                                    <h3>Order Items</h3>
+                                    <div class="order-items">
+                                        <div class="order-item">
+                                            <div class="item-image">
+                                                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTt8qX9qsHPIP7-ui1oKk772vWPbkdy1htz56GPGMl8oTFZlFEyc69mC4prpbVaF--CP-vypQDi61C2Pe4JZzsbuR7uzBN4m9DyvUxOb6VB1k7H1x89Kls6" alt="Premium Fountain Pen">
+                                            </div>
+                                            <div class="item-details">
+                                                <h4>Premium Fountain Pen</h4>
+                                                <p>Color: Black, Nib: Medium</p>
+                                                <p>Qty: 1</p>
+                                            </div>
+                                            <div class="item-price">$29.99</div>
+                                        </div>
+                                        
+                                        <div class="order-item">
+                                            <div class="item-image">
+                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbVGY9VmUl6w6sR_RWo9JZUocf4u6hqFiFmQ&s" alt="Leather Notebook">
+                                            </div>
+                                            <div class="item-details">
+                                                <h4>Leather Notebook</h4>
+                                                <p>Color: Brown, Size: A5</p>
+                                                <p>Qty: 2</p>
+                                            </div>
+                                            <div class="item-price">$49.98</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="order-totals">
+                                    <div class="total-row">
+                                        <span>Subtotal</span>
+                                        <span>$79.97</span>
+                                    </div>
+                                    <div class="total-row">
+                                        <span>Shipping</span>
+                                        <span>$5.00</span>
+                                    </div>
+                                    <div class="total-row">
+                                        <span>Tax</span>
+                                        <span>$4.80</span>
+                                    </div>
+                                    <div class="total-row grand-total">
+                                        <span>Total</span>
+                                        <span>$89.77</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group checkbox">
+                                    <input type="checkbox" id="terms" required>
+                                    <label for="terms">I agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></label>
+                                </div>
+                                
+                                <div class="step-actions">
+                                    <button type="button" class="btn btn-outline prev-step">Back to Payment</button>
+                                    <button type="submit" class="btn place-order">Place Order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-summary">
+                    <div class="summary-card">
+                        <h3>Order Summary</h3>
+                        <div class="order-items">
+                            <div class="order-item">
+                                <div class="item-image">
+                                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTt8qX9qsHPIP7-ui1oKk772vWPbkdy1htz56GPGMl8oTFZlFEyc69mC4prpbVaF--CP-vypQDi61C2Pe4JZzsbuR7uzBN4m9DyvUxOb6VB1k7H1x89Kls6" alt="Premium Fountain Pen">
+                                </div>
+                                <div class="item-details">
+                                    <h4>Premium Fountain Pen</h4>
+                                    <p>Qty: 1</p>
+                                </div>
+                                <div class="item-price">$29.99</div>
+                            </div>
+                            
+                            <div class="order-item">
+                                <div class="item-image">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbVGY9VmUl6w6sR_RWo9JZUocf4u6hqFiFmQ&s" alt="Leather Notebook">
+                                </div>
+                                <div class="item-details">
+                                    <h4>Leather Notebook</h4>
+                                    <p>Qty: 2</p>
+                                </div>
+                                <div class="item-price">$49.98</div>
+                            </div>
+                        </div>
+                        
+                        <div class="summary-totals">
+                            <div class="total-row">
+                                <span>Subtotal</span>
+                                <span>$79.97</span>
+                            </div>
+                            <div class="total-row">
+                                <span>Shipping</span>
+                                <span>$5.00</span>
+                            </div>
+                            <div class="total-row">
+                                <span>Tax</span>
+                                <span>$4.80</span>
+                            </div>
+                            <div class="total-row grand-total">
+                                <span>Total</span>
+                                <span>$89.77</span>
+                            </div>
+                        </div>
+                        
+                        <div class="secure-checkout">
+                            <i class="fas fa-lock"></i>
+                            <span>Secure Checkout</span>
+                        </div>
+                    </div>
+                    
+                    <div class="support-card">
+                        <h4>Need Help?</h4>
+                        <p>Our customer service team is available to assist you with any questions about your order.</p>
+                        <div class="support-contact">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="support-contact">
+                            <i class="fas fa-envelope"></i>
+                            <span>support@stationeryhub.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h3>StationeryHub</h3>
+                <p>Your one-stop shop for all creative supplies and stationery needs.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> info@stationeryhub.com</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 StationeryHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

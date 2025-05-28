@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StationeryHub - Your Creative Supplies Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">StationeryHub</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <button id="theme-toggle" class="icon-btn"><i class="fas fa-moon"></i></button>
+                <a href="login.html" class="icon-btn"><i class="fas fa-user"></i></a>
+                <a href="wishlist.html" class="icon-btn"><i class="fas fa-heart"></i></a>
+                <a href="cart.html" class="icon-btn"><i class="fas fa-shopping-cart"></i></a>
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content (will be different for each page) -->
+    <!-- Use the same header and footer from index.html -->
+<main class="main-content">
+    <section class="cart-page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Your Shopping Cart</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> / <span>Cart</span>
+                </div>
+            </div>
+            
+            <div class="cart-layout">
+                <div class="cart-items">
+                    <div class="cart-table">
+                        <div class="cart-table-header">
+                            <div class="header-item product">Product</div>
+                            <div class="header-item price">Price</div>
+                            <div class="header-item quantity">Quantity</div>
+                            <div class="header-item total">Total</div>
+                            <div class="header-item remove">Remove</div>
+                        </div>
+                        
+                        <div class="cart-table-row">
+                            <div class="cart-item product">
+                                <a href="product.html?id=1" class="product-link">
+                                    <div class="product-image">
+                                        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTt8qX9qsHPIP7-ui1oKk772vWPbkdy1htz56GPGMl8oTFZlFEyc69mC4prpbVaF--CP-vypQDi61C2Pe4JZzsbuR7uzBN4m9DyvUxOb6VB1k7H1x89Kls6" alt="Premium Fountain Pen">
+                                    </div>
+                                    <div class="product-details">
+                                        <h3 class="product-title">Premium Fountain Pen</h3>
+                                        <div class="product-variant">Color: Black, Nib: Medium</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="cart-item price">$29.99</div>
+                            <div class="cart-item quantity">
+                                <div class="quantity-selector">
+                                    <button class="quantity-btn minus">-</button>
+                                    <input type="number" value="1" min="1">
+                                    <button class="quantity-btn plus">+</button>
+                                </div>
+                            </div>
+                            <div class="cart-item total">$29.99</div>
+                            <div class="cart-item remove">
+                                <button class="remove-btn"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </div>
+                        
+                        <div class="cart-table-row">
+                            <div class="cart-item product">
+                                <div class="product-image">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbVGY9VmUl6w6sR_RWo9JZUocf4u6hqFiFmQ&s" alt="Leather Notebook">
+                                </div>
+                                <div class="product-details">
+                                    <h3 class="product-title">Leather Notebook</h3>
+                                    <div class="product-variant">Color: Brown, Size: A5</div>
+                                </div>
+                            </div>
+                            <div class="cart-item price">$24.99</div>
+                            <div class="cart-item quantity">
+                                <div class="quantity-selector">
+                                    <button class="quantity-btn minus">-</button>
+                                    <input type="number" value="2" min="1">
+                                    <button class="quantity-btn plus">+</button>
+                                </div>
+                            </div>
+                            <div class="cart-item total">$49.98</div>
+                            <div class="cart-item remove">
+                                <button class="remove-btn"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cart-actions">
+                        <a href="products.html" class="btn btn-outline"><i class="fas fa-arrow-left"></i> Continue Shopping</a>
+                        <button class="btn" id="update-cart">Update Cart</button>
+                    </div>
+                </div>
+                
+                <div class="cart-summary">
+                    <div class="summary-card">
+                        <h3>Order Summary</h3>
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span>$79.97</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping</span>
+                            <span>$5.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Tax</span>
+                            <span>$4.80</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total</span>
+                            <span>$89.77</span>
+                        </div>
+                        
+                        <div class="coupon-form">
+                            <label for="coupon">Have a coupon?</label>
+                            <div class="coupon-input">
+                                <input type="text" id="coupon" placeholder="Enter coupon code">
+                                <button class="btn">Apply</button>
+                            </div>
+                        </div>
+                        
+                        <a href="checkout.html" class="btn checkout-btn">Proceed to Checkout</a>
+                        
+                        <div class="secure-checkout">
+                            <i class="fas fa-lock"></i>
+                            <span>Secure Checkout</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h3>StationeryHub</h3>
+                <p>Your one-stop shop for all creative supplies and stationery needs.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> info@stationeryhub.com</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 StationeryHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="js/api.js" type="module"></script>
+    <script src="js/cart.js" type="module"></script>
+</body>
+</html>

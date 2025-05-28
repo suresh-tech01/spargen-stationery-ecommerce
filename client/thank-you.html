@@ -1,0 +1,88 @@
+<!-- thank-you.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You - StationeryHub</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #f2f7fc;
+      font-family: 'Segoe UI', sans-serif;
+      overflow: hidden;
+    }
+
+    .thank-you-wrapper {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .thank-you-wrapper h1 {
+      color: #4a90e2;
+      font-size: 2.5em;
+      margin-bottom: 15px;
+    }
+
+    .thank-you-wrapper p {
+      font-size: 1.1em;
+      color: #555;
+    }
+
+    .thank-you-icon {
+      font-size: 60px;
+      color: #4caf50;
+      margin-bottom: 20px;
+      animation: bounce 1s infinite alternate;
+    }
+
+    .return-home {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 12px 24px;
+      background: #4a90e2;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 1em;
+      transition: background 0.3s ease;
+    }
+
+    .return-home:hover {
+      background: #357acc;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes bounce {
+      from { transform: translateY(0); }
+      to { transform: translateY(-8px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="thank-you-wrapper">
+    <div class="thank-you-icon">
+      <i class="fas fa-check-circle"></i>
+    </div>
+    <h1>Thank You!</h1>
+    <p>Your order has been placed successfully.</p>
+    <p>We appreciate your business and hope you enjoy your purchase.</p>
+    <a href="index.html" class="return-home">Return to Homepage</a>
+  </div>
+  
+</body>
+</html>
